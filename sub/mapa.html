@@ -3,34 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/css.css" />
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/map.css" />
     <title>PescaIndalo</title>
 </head>
 <body>
-    <header class="Encabezado">
-
-        <!--<img class="imgenc" src="/imgn/pesca.png">-->
-        <div>
-          <h1>PescaIndalo</h1>
-        </div>
-      
-        <!--Barra de navegación-->
-        <div class="nav-b">
-          <nav class="nav-prin contenedor">
-            <a href="../index.html">Inicio</a>
-            <a href="/sub/modalidades.html">Modalidades</a>
-            <a href="/sub/recomendaciones.html">Recomendaciones</a>
-            <a href="/sub/torneos.html">Torneos</a>
-            <a href="/sub/mapa.html">Mapa</a>
-            <a href="/sub/blog.html">Blog</a>
-          </nav>
-        </div>
-      </header>
+  <header>  
+    <div class="nav-b">
+      <nav class="navbar">
+        <img alt="web logo" class="navbar__web-logo" src="../imgn/pesca.png">
+        <h1 class="navbar__title">PescaIndalo</h1>
+        <a class="navbar__element" href="../index.html">Inicio</a>
+        <a class="navbar__element" href="../sub/modalidades.html">Modalidades</a>
+        <a class="navbar__element" href="../sub/recomendaciones.html">Recomendaciones</a>
+        <a class="navbar__element" href="../sub/torneos.html">Torneos</a>
+        <a class="navbar__element" href="../sub/mapa.html">Mapa</a>
+      </nav>
+    </div>
+  </header>
 
       <main>
-        <h2>Zonas recomendadas de pesca en Almería</h2>
-        <section class="contenedor">
+        <h1 class="zonas__title">Zonas recomendadas de pesca en Almería</h1>
+        <section class="map__section">
             <div>
                 <h3>Playa Albudera de Adra/La Habana</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1459.0345134783327!2d-2.948686036429147!3d36.74874344005952!2m3!1f0!2f0!3f0!3m2!1
@@ -54,6 +48,6 @@
             </div>
         </section>
       </main>
-      
+      <footer class="footer"><p class="footer__copyright">Diego Blanque Saavedra © 2024</p></footer>
 </body>
 </html>

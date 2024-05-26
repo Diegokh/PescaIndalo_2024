@@ -1,0 +1,14 @@
+.zonas__title {
+    padding-left: 25rem;
+    padding-right: 25rem;
+}
+
+.map__section {
+    display: grid;
+    padding-left: 25rem;
+    padding-right: 25rem;
+
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+

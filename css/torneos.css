@@ -1,0 +1,26 @@
+
+
+.calendario {
+    padding-top: 2rem;
+    margin-right: 25rem;
+    margin-left: 25rem;
+    padding: 2rem;
+
+    font-size: 1.725rem;
+
+    align-content: center;
+    background-color: #d6f2ff;
+
+    border: 1px, solid, #777777;
+    border-radius: 10px;
+}
+
+.calendario__mes {
+    padding-right: 25rem;
+    padding-left: 25rem;
+} 
+
+.torneos__fecha {
+    padding-right: 25rem;
+    padding-left: 25rem;
+}
