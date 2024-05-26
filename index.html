@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" href="imgn/pesca.png">
+  <script src="https://kit.fontawesome.com/323147442d.js" crossorigin="anonymous"></script>
   <title>PescaIndalo - Pesca a otro nivel</title>
 </head>
 
@@ -16,14 +17,13 @@
     <!--Barra de navegación-->
     <div class="nav-b">
       <nav class="navbar">
-        <img class="navbar__web-logo" src="./imgn/pesca.png">
+        <img alt="web logo" class="navbar__web-logo" src="./imgn/pesca.png">
         <h1 class="navbar__title">PescaIndalo</h1>
-        <a class="navbar__element" href="index.html">Inicio</a>
-        <a class="navbar__element" href="/sub/modalidades.html">Modalidades</a>
-        <a class="navbar__element" href="/sub/recomendaciones.html">Recomendaciones</a>
-        <a class="navbar__element" href="/sub/torneos.html">Torneos</a>
-        <a class="navbar__element" href="/sub/mapa.html">Mapa</a>
-        <a class="navbar__element" href="/sub/blog.html">Blog</a>
+        <a class="navbar__element" href="./index.html">Inicio</a>
+        <a class="navbar__element" href="./sub/modalidades.html">Modalidades</a>
+        <a class="navbar__element" href="./sub/recomendaciones.html">Recomendaciones</a>
+        <a class="navbar__element" href="./sub/torneos.html">Torneos</a>
+        <a class="navbar__element" href="./sub/mapa.html">Mapa</a>
       </nav>
     </div>
   </header>
@@ -47,19 +47,36 @@
       </div>
     </section>
 
-    <section class="midprin caja">
-      <h2 class="titprin">Secciones Principales</h2>
-      <div class="sec1">
-        <a href="/sub/recomendaciones.html">Recomendaciones</a>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-thumb-up" width="48" height="48"
-          viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round"
-          stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path
-            d="M7 11v8a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-7a1 1 0 0 1 1 -1h3a4 4 0 0 0 4 -4v-1a2 2 0 0 1 4 0v5h3a2 2 0 0 1 2 2l-1 5a2 3 0 0 1 -2 2h-7a3 3 0 0 1 -3 -3" />
-        </svg>
-        <p class="tsec1">Podras ver nuestras recomendaciones sobre equipamiento de pesca</p>
+
+    <section class="sections">
+      <div class="section__card">
+        <a class="card__link" href="./sub/recomendaciones.html">
+          <h1 class="card__title" href="./sub/recomendaciones.html">Recomendaciones <i class="fa-solid fa-thumbs-up"></i></h1>
+          <p class="card__description">Mira nuestras recomendaciones sobre los equipos de pesca.</p>
+        </a>
       </div>
+
+      <div class="section__card">
+        <a class="card__link" href="./sub/recomendaciones.html">
+          <h1 class="card__title" href="./sub/recomendaciones.html">Recomendaciones <i class="fa-solid fa-thumbs-up"></i></h1>
+          <p class="card__description">Mira nuestras recomendaciones sobre los equipos de pesca.</p>
+        </a>
+      </div>
+
+      <div class="section__card">
+        <a class="card__link" href="./sub/recomendaciones.html">
+          <h1 class="card__title" href="./sub/recomendaciones.html">Recomendaciones <i class="fa-solid fa-thumbs-up"></i></h1>
+          <p class="card__description">Mira nuestras recomendaciones sobre los equipos de pesca.</p>
+        </a>
+      </div>
+
+      <div class="section__card">
+        <a class="card__link" href="./sub/recomendaciones.html">
+          <h1 class="card__title" href="./sub/recomendaciones.html">Recomendaciones <i class="fa-solid fa-thumbs-up"></i></h1>
+          <p class="card__description">Mira nuestras recomendaciones sobre los equipos de pesca.</p>
+        </a>
+      </div>
+<!--
       <div class="sec2">
         <a href="/sub/torneos.html">Torneos</a>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trophy-filled" width="48"
@@ -72,6 +89,7 @@
         </svg>
         <p class="tsec2">En esta seccion podras ver los proximos torneos en la provincia de almeria</p>
       </div>
+
       <div class="sec3">
         <a href="/sub/mapa.html">Mapa</a>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" width="48" height="48"
@@ -87,13 +105,13 @@
         </svg>
         <p class="tsec3">En esta seccion podras ver las mejores zonas de pesca en la provincia</p>
       </div>
-      <img  class="pescamain"  src="/imgn/ccmain.png">
-    </section>
 
-    
+      <img  class="pescamain"  src="./imgn/ccmain.png">
+-->
+</section>
 
   </main>
-  <footer class="paginap">Diego Blanque Saavedra.Todos los derechos reservados.©</footer>
+  <footer class="footer"><p class="footer__copyright">Diego Blanque Saavedra © 2024</p></footer>
 </body>
 
 </html>

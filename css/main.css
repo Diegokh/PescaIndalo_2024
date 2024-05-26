@@ -22,6 +22,9 @@
 
 body {
     margin: 0px;
+
+    background: radial-gradient(circle at center, #edfaff, #48cbff90),
+    radial-gradient(circle at center, #edfaff50, #edfaff00);
 }
 
 /* Navbar */
@@ -73,9 +76,6 @@ body {
 
     align-items: center;
 
-    background: radial-gradient(circle at center, #0e315d, #007bff90),
-  radial-gradient(circle at center, #0e315d50, #007bff00);
-
   padding-right:25rem;
   padding-left: 25rem;
 }
@@ -97,4 +97,61 @@ body {
     padding: 3rem;
     
     border-radius: 10px;
+}
+
+
+
+/* Sections */
+
+.sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    padding-left: 25rem;
+    padding-right: 25rem;
+}
+
+.section__card {
+    text-decoration: none;
+
+    border-radius: 10px;
+    border: 2px #000 solid;
+    background-color: #d6f2ff;
+
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.card__link {
+    text-decoration: none;
+}
+
+.card__title {
+  font-size: 2.225rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #1eadff;
+
+  margin-bottom: 0rem;
+}
+
+.card__title:hover {
+  color: #007bff;
+}
+
+.card__description {
+    font-size: 1.125rem;
+    color: #161616;
+    margin-top: 0.3rem;
+}
+
+/* Footer */
+.footer {
+    padding-left: 25rem;
+    padding-right: 25rem;
+}
+
+.footer__copyright {
+    font-weight: 600;
 }
