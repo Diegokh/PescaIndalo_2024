@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(Inter-VariableFont_slnt,wght)
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    /*
+    --azure-radiance-50: #edfaff,
+    --azure-radiance-100: #d6f2ff,
+    --azure-radiance-200: #b5eaff,
+    --azure-radiance-300: #83dfff,
+    --azure-radiance-400: #48cbff,
+    --azure-radiance-500: #1eadff,
+    --azure-radiance-600: #068fff,
+    --azure-radiance-700: #007bff,
+    --azure-radiance-800: #085ec5,
+    --azure-radiance-900: #0d519b,
+    --azure-radiance-950: #0e315d,
+    */
+}
+
+body {
+    margin: 0px;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: #085ec5;
+
+    padding-right: 25rem;
+    padding-left: 25rem;
+}
+
+.navbar__title {
+    padding-right: 2rem;
+}
+
+.navbar__web-logo {
+    width: 32px;
+    height: 32px;
+
+    padding-right: 1rem;
+}
+
+.navbar__element {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+
+    text-decoration: none;
+    font-weight: 600;
+    color: #edfaff;
+}
+
+.navbar__element:hover {
+    color: #b5eaff;
+}
+
+/* Main */
+
+/* Bienvenida */
+
+.bienvenida {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    align-items: center;
+
+    background: radial-gradient(circle at center, #0e315d, #007bff90),
+  radial-gradient(circle at center, #0e315d50, #007bff00);
+
+  padding-right:25rem;
+  padding-left: 25rem;
+}
+
+.bienvenida__titulo {
+    font-size: 2.225rem;
+}
+
+.bienvenida__button {
+    background-color: #fff;
+    font-size: 1.125rem;
+    padding: 0.5rem;
+}
+
+.bienvenida__img {
+    width: 500px;
+    height: 400px;
+
+    padding: 3rem;
+    
+    border-radius: 10px;
+}
