@@ -5,19 +5,7 @@
 
 :root {
     font-family: Inter, sans-serif;
-    /*
-    --azure-radiance-50: #edfaff,
-    --azure-radiance-100: #d6f2ff,
-    --azure-radiance-200: #b5eaff,
-    --azure-radiance-300: #83dfff,
-    --azure-radiance-400: #48cbff,
-    --azure-radiance-500: #1eadff,
-    --azure-radiance-600: #068fff,
-    --azure-radiance-700: #007bff,
-    --azure-radiance-800: #085ec5,
-    --azure-radiance-900: #0d519b,
-    --azure-radiance-950: #0e315d,
-    */
+   
 }
 
 body {
@@ -27,7 +15,7 @@ body {
     radial-gradient(circle at center, #edfaff50, #edfaff00);
 }
 
-/* Navbar */
+/* Barra navegación */
 
 .navbar {
     display: flex;
@@ -155,8 +143,9 @@ body {
 
 /* Footer */
 .footer {
-    padding-left: 25rem;
-    padding-right: 25rem;
+   /* text-align: center;*/
+    padding-left: 49rem;
+    padding-right: 40rem;
 }
 
 .footer__copyright {

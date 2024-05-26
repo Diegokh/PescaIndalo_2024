@@ -1,10 +1,11 @@
 .modalidades {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     padding-right: 25rem;
     padding-left: 25rem;
 }
+
 
 .modalidad__title {
     display: flex;
@@ -35,4 +36,9 @@
     width: 400px;
     margin-left: 1rem;
     object-fit: contain;
+}
+
+.bibliografia{
+    padding-right: 25rem;
+    padding-left: 25rem;
 }

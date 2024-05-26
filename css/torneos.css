@@ -1,10 +1,11 @@
-
+/*
 
 .calendario {
     padding-top: 2rem;
-    margin-right: 25rem;
-    margin-left: 25rem;
+    margin-right: 40rem;
+    margin-left: 48rem;
     padding: 2rem;
+    
 
     font-size: 1.725rem;
 
@@ -16,11 +17,133 @@
 }
 
 .calendario__mes {
-    padding-right: 25rem;
-    padding-left: 25rem;
+    padding-right: 40rem;
+    padding-left: 50rem;
 } 
 
 .torneos__fecha {
-    padding-right: 25rem;
-    padding-left: 25rem;
+    padding-right: 40rem;
+    padding-left: 50rem;
+}
+.imgcopa {
+    display: block;
+    margin: 2rem auto;
+}*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header, footer {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendario {
+    padding-top: 2rem;
+    padding: 2rem;
+    font-size: 1.725rem;
+    align-content: center;
+    background-color: #d6f2ff;
+    border: 1px solid #777777;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.calendario__mes {
+    margin-bottom: 1rem;
+}
+
+.torneos__fecha {
+    margin-bottom: 2rem;
+}
+
+.imgcopa {
+    margin: 2rem 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.footer__copyright {
+    margin: 20px 0;
+}
+
+
+
+
+/*Tabla xslt*/
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table.torneo{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.torneo th, table.torneo td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table.torneo th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table.torneo tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.torneo tr:hover {
+    background-color: #ddd;
+}
+
+table.torneo td {
+    padding: 10px;
 }

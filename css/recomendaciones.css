@@ -41,3 +41,143 @@
 .cebos__img {
     width: 300px;
 }
+
+/*Tabla xslt*/
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table.equipamientos{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.equipamientos th, table.equipamientos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table.equipamientos th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table.equipamientos tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.equipamientos tr:hover {
+    background-color: #ddd;
+}
+
+table.equipamientos td {
+    padding: 10px;
+}
+
+/*Segunda tabla xslt*/
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table.mayor50{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.mayor50 th, table.mayor50 td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table.mayor50 th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table.mayor50 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.mayor50 tr:hover {
+    background-color: #ddd;
+}
+
+table.mayor50 td {
+    padding: 10px;
+}
+
+/*Tabla para xquery*/
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table.detallescp{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.detallescp th, table.detallescp td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table.detallescp th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table.detallescp tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.detallescp tr:hover {
+    background-color: #ddd;
+}
+
+table.detallescp td {
+    padding: 10px;
+}
+
+/*Segunda tabla xquery*/
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table.vivceb{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.vivceb th, table.vivceb td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table.vivceb th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table.vivceb tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.vivceb tr:hover {
+    background-color: #ddd;
+}
+
+table.vivceb td {
+    padding: 10px;
+}
