@@ -1,149 +1,65 @@
-/*
-
 .calendario {
     padding-top: 2rem;
-    margin-right: 40rem;
-    margin-left: 48rem;
     padding: 2rem;
-    
-
-    font-size: 1.725rem;
-
-    align-content: center;
-    background-color: #d6f2ff;
-
-    border: 1px, solid, #777777;
-    border-radius: 10px;
-}
-
-.calendario__mes {
-    padding-right: 40rem;
-    padding-left: 50rem;
-} 
-
-.torneos__fecha {
-    padding-right: 40rem;
-    padding-left: 50rem;
-}
-.imgcopa {
-    display: block;
-    margin: 2rem auto;
-}*/
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
     margin: 0 auto;
-}
-
-header, footer {
-    width: 100%;
-    max-width: 1200px;
-    text-align: center;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.calendario {
-    padding-top: 2rem;
-    padding: 2rem;
+    max-width: 80%; 
     font-size: 1.725rem;
-    align-content: center;
+    text-align: center;
     background-color: #d6f2ff;
-    border: 1px solid #777777;
+    border: 1px solid #777777; 
     border-radius: 10px;
-    margin-bottom: 2rem;
 }
 
-.calendario__mes {
-    margin-bottom: 1rem;
-}
-
+.calendario__mes,
 .torneos__fecha {
+    margin: 0 auto;
+    max-width: 80%; 
+    padding: 0;
+    text-align: center;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.imgcopa {
-    margin: 2rem 0;
+.torneos__ul {
+    list-style-type: none;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 2rem;
+/* Tabla xslt */
+
+.tabla__xslt {
+    padding-right: 25rem;
+    padding-left: 25rem;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #ddd;
-}
-
-.footer__copyright {
-    margin: 20px 0;
-}
-
-
-
-
-/*Tabla xslt*/
-h1 {
+.xslt__titulo {
     text-align: center;
     color: #333;
 }
 
-table.torneo{
+.xslt__torneo {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-table.torneo th, table.torneo td {
+.xslt__torneo th, .xslt__torneo td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
 }
 
-table.torneo th {
-    background-color: #4CAF50;
+.xslt__torneo th {
+    background-color: #007bff;
     color: white;
 }
 
-table.torneo tr:nth-child(even) {
+.xslt__torneo tr {
     background-color: #f2f2f2;
 }
 
-table.torneo tr:hover {
+.xslt__torneo tr:hover {
     background-color: #ddd;
 }
 
-table.torneo td {
+.xslt__torneo td {
     padding: 10px;
 }
