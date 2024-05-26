@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./cañas_mas_50_euros/cañas_mas_50_euros.xsl"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+
+<pescaindalo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="pescaindalo.xsd" >
+
+    <!--Tipos Modalidades de Pesca y descripción-->
+    <modalidades>
+        <modalidad cod_mod="MODSURF">
+            <nom_Modalidad>Surfcasting</nom_Modalidad>
+            <descripcion_mod>
+                 Es una modalidad de pesca deportiva o de afición, consistente en la pesca
+                 con caña de pescar, que se realiza desde la orilla de la playa o una zona portuaria.
+            </descripcion_mod>
+        </modalidad>
+        <modalidad cod_mod="MODSPIN">
+            <nom_Modalidad>
+                Spinning
+            </nom_Modalidad>
+            <descripcion_mod>
+                Es básicamente una modalidad de pesca que consiste en intentar engañar a los peces 
+                lanzando un señuelo artificial al agua y darle vida moviéndolo de forma parecida a 
+                como lo haría un pececillo u otra criatura de verdad.
+            </descripcion_mod>
+        </modalidad>
+        <modalidad cod_mod="MODRCFS">
+            <nom_Modalidad>Rockfishing</nom_Modalidad>
+            <descripcion_mod>
+                Es una modalidad híbrida, derivada de la pesca a Surfcasting y la pesca a Spinning 
+                ligero. Con la particularidad de ser practicada en fondos rocosos.
+                Consiste en alcanzar a los peces que se refugian en los acantilados, roquedos, espigones o zonas cuyo fondo y alrededores sean rocosos.
+                Puede practicarse a cualquier profundidad siempre y cuando el equipo de carácter ligero, pueda soportarlo.
+            </descripcion_mod>
+        </modalidad>
+    </modalidades>
+    <!--Recomendaciones en equipamiento,cebos... junto una descripcion y su nombre-->
+    <cebos>
+        <cebo cod_cebo="cv_lc">
+            <clase>Cebo Vivo</clase>
+            <nombre> Lombriz coreana </nombre>
+            <descripcion>
+                Esta especie es muy apreciada para la pesca gracias a su vitalidad y amplio rango de presas potenciales. Debido a sus resistentes carnes
+                 y tamaño, es válido para diversas técnicas, como el lanzado pesado o el surfcasting.
+            </descripcion>
+            <precio>5</precio>
+        </cebo>
+        <cebo cod_cebo="cv_la">
+            <clase>Cebo Vivo</clase>
+            <nombre>Lombriz americana</nombre>
+            <descripcion>                        
+                Puede utilizarse entero para pescar espáridos, lubinas o lobinas al surfcasting o con flotador. 
+            </descripcion>
+            <precio>12</precio>
+        </cebo>
+        <cebo cod_cebo="cv_tm">
+            <clase>Cebo Vivo</clase>
+            <nombre>Tita mediana</nombre>
+            <descripcion>                        
+                Cebo natural para pesca en agua salada adecuado para la pesca de dorada, herrera, sargo, lubina y otros peces.
+            </descripcion>
+            <precio>12</precio>
+        </cebo>
+        <cebo cod_cebo="ca_v13">
+            <clase>Cebo Artificial</clase>
+            <nombre>Vinilo 13 cm </nombre>
+            <descripcion>Este señuelo ha sido diseñado para la pesca de depredadores en puestos con obstáculos.</descripcion>
+            <precio>6</precio>
+        </cebo>
+        <cebo cod_cebo="ca_bm">
+            <clase>Cebo Artificial</clase>
+            <nombre>SEÑUELO COMBO BLACK MINNOW</nombre>
+            <descripcion>Cabeza plomada de 10 gramos con cuerpo de vinilo y anzuelo articulado para la pesca de depredadores en agua dulce y salada.</descripcion>
+            <precio>8</precio>
+        </cebo>
+
+        <cebo cod_cebo="ca_wn">
+            <clase>Cebo Artificial</clase>
+            <nombre> CUCHARILLAS GIRATORIAS PESCA WERO NEW </nombre>
+            <descripcion>Kit formado por diferentes cucharillas tamaños nº 1 y nº 2</descripcion>
+            <precio>5</precio>
+        </cebo>
+
+
+    </cebos>
+    <equipamientos>
+        <equipamiento cod_equipamiento="cp_42H">
+            <nombre> Daiwa SWEEPFIRE 42H </nombre>
+            <descripcion> 
+                Esta es una caña excelente para principiantes,ofrece buenas prestaciones y su precio es de 75 euros
+            </descripcion>
+            <tipo>Caña de pescar</tipo>
+            <precio>75</precio>
+            <peso></peso>
+        </equipamiento>
+        
+        
+            <equipamiento cod_equipamiento="cp_kn">
+                <nombre>Kali-Kunnan Nemesis</nombre>
+                <descripcion>
+                    Es una excelente opción dentro de las cañas económicas,fabricadas en carbono y con 4,20 de longitud
+                </descripcion>
+                <tipo>Caña de pescar</tipo>
+                <precio>45</precio>
+                <peso></peso>
+            </equipamiento>
+        
+
+        <equipamiento cod_equipamiento="cp_os">
+            <nombre>ORUS SURF YUK</nombre>
+            <descripcion>Esta caña esta pensada para jornadas largas de pesca</descripcion>
+            <tipo>Caña de pescar</tipo>
+            <precio>50</precio>
+            <peso></peso>
+        </equipamiento>
+        
+                <equipamiento cod_equipamiento="cp_ht">
+            <nombre>Hart Toro Taktik Popping FK</nombre>
+            <descripcion>
+                está diseñada para la pesca de popping ligero, pero
+                cuenta con gran potencia para capturar atunes medianos. 
+                Permite lanzar señuelos ligeros y medianos con facilidad
+            </descripcion>
+            <tipo>Caña de pescar</tipo>
+            <precio>145</precio>
+            <peso></peso>
+        </equipamiento>
+
+
+        <equipamiento cod_equipamiento="an_bt">
+            <nombre>AZUELO ASARI BLACK TUNA</nombre>
+            <descripcion>
+                El anzuelo Asari Black Tuna está recomendado para la pesca de grandes especies.
+            </descripcion>
+            <tipo>Anzuelo</tipo>
+            <precio>4</precio>
+            <peso></peso>
+        </equipamiento>
+        
+        <equipamiento cod_equipamiento="an_h121">
+            <nombre>ANZUELOS HAYABUSA 121</nombre>
+            <descripcion>
+                Anzuelos japoneses de alta calidad, tamaño Nº1
+            </descripcion>
+            <tipo>Anzuelo</tipo>
+            <precio>6</precio>
+            <peso></peso>
+        </equipamiento>
+
+        <equipamiento cod_equipamiento="an_dp">
+            <nombre>Anzuelos Pesca Mar Dorada Paleta</nombre>
+            <descripcion>
+                Estos anzuelos están diseñados para la pesca de doradas con cebo natura
+            </descripcion>
+            <tipo>Anzuelo</tipo>
+            <precio>5</precio>
+            <peso></peso>
+        </equipamiento>
+
+        <equipamiento cod_equipamiento="an_ps">
+            <nombre>ANZUELO SIMPLE PESCA DEL SILURO CF</nombre>
+            <descripcion>
+                Anzuelo simple con ojo polivalentes para todos los montajes.Muy sólido, para la pesca de siluros grandes.
+            </descripcion>
+            <tipo>Anzuelo</tipo>
+            <precio>2</precio>
+            <peso></peso>
+        </equipamiento>
+
+        <equipamiento cod_equipamiento="hil_yi">
+            <nombre>YUKI INVISIBLE 3G</nombre>
+            <descripcion>
+                Buen hilo para principiante con una buena relacion calidad/precio
+            </descripcion>
+            <tipo>Hilo</tipo>
+            <precio>12</precio>
+            <peso></peso>
+        </equipamiento>
+
+        <equipamiento cod_equipamiento="hil_uc4">
+            <nombre>GORILLA UC4</nombre>
+            <descripcion>
+                Se utiliza para hacer líneas madre, bobinar carretes o para empatillar anzuelos. 
+                Destaca por su alto rendimiento en días claros y con diámetros moderados.
+            </descripcion>
+            <tipo>Hilo</tipo>
+            <precio>20</precio>
+            <peso></peso>
+        </equipamiento>
+
+        <equipamiento cod_equipamiento="hil_sfl">
+            <nombre>SEAGUAR FINAL LINE</nombre>
+            <descripcion>
+                La línea Seaguar Final Line es un flourocarbono único en el mercado debido a su marcada elasticidad.
+                Es muy resistente y mantiene invariable la resistencia a la rotura, incluso tras largo tiempo en el agua.
+            </descripcion>
+            <tipo>Hilo</tipo>
+            <precio>27</precio>
+            <peso></peso>
+        </equipamiento>
+
+        <equipamiento cod_equipamiento="hil_sc">
+            <nombre>Sedal Pesca Surfcasting Symbios Cereza</nombre>
+            <descripcion>
+                El color de este sedal permite que sea visible fuera del agua e invisible en ella.
+                Ideal para la pesca a surfcasting
+            </descripcion>
+            <tipo>Hilo</tipo>
+            <precio>13</precio>
+            <peso></peso>
+        </equipamiento>
+
+        <equipamiento cod_equipamiento="pl_fp">
+            <nombre>PLOMO FONDO PORTUGUES</nombre>
+            <descripcion>
+                Plomada polivalente para pescar en diferentes 
+                 modalidades de pesca deportiva como surfcasting
+            </descripcion>
+            <tipo>Plomo</tipo>
+            <precio>4</precio>
+            <peso>120</peso>
+        </equipamiento>
+
+        <equipamiento cod_equipamiento="pl_ta">
+            <nombre>PLOMO TUBO ALAS</nombre>
+            <descripcion>
+                Plomo de  con tubo corredizo especial para la pesca en piedras o 
+                llanuras de alguero, por sus alas despega fácilmente del fondo.
+            </descripcion>
+            <tipo>Plomo</tipo>
+            <precio>6</precio>
+            <peso>100</peso>
+        </equipamiento>
+
+        <equipamiento cod_equipamiento="pl_fm">
+            <nombre>PLOMO FONDO MIXTO</nombre>
+            <descripcion>
+                Plomada polivalente para pescar en diferentes modalidades de pesca deportiva
+            </descripcion>
+            <tipo>Plomo</tipo>
+            <precio>5</precio>
+            <peso>65</peso>
+        </equipamiento>
+
+        <equipamiento cod_equipamiento="pl_sp">
+            <nombre>CAJA SURTIDO PLOMOS</nombre>
+            <descripcion>
+                Surtido de plomos ideal para la pesca a surfcasting
+            </descripcion>
+            <tipo>Plomo</tipo>
+            <precio>7</precio>
+            <peso>Variado</peso>
+        </equipamiento>
+
+    </equipamientos>
+    <!--Calendario de torneos de pesca en la provincia-->
+    <torneos>
+       <torneo cod_zona="comp01">
+            <nombre>Copa Piston</nombre>
+            <fecha>2024-06-03</fecha>
+            <zona_torneo cod_zona="zon01"/>
+            <mixto>SI</mixto>
+            <recomendaciones>
+                Traerse su propio cebo para la competicion
+            </recomendaciones>
+            <precio>7</precio>
+       </torneo>
+
+       <torneo cod_zona="comp02">
+            <nombre>Copa Almeria</nombre>
+            <fecha>2024-07-06</fecha>
+            <zona_torneo cod_zona="zon02"/>
+            <mixto>NO</mixto>
+            <recomendaciones>
+                LLegar 1 hora antes a la competicion
+            </recomendaciones>
+            <precio>12</precio>
+        </torneo>
+
+        <torneo cod_zona="comp03">
+            <nombre>Copa Arrecife</nombre>
+            <fecha>2024-08-26</fecha>
+            <zona_torneo cod_zona="zon03"/>
+            <mixto>SI</mixto>
+            <recomendaciones>Si vienen menores de edad deben de ir acompañados de sus padres o su tutor legal</recomendaciones>
+            <precio>5</precio>
+
+       </torneo>
+
+       <torneo cod_zona="comp04">
+        <nombre>Copa atomica</nombre>
+        <fecha>2024-08-16</fecha>
+        <zona_torneo cod_zona="zon02"/>
+        <mixto>NO</mixto>
+        <recomendaciones>No se permite la entrada a menores de edad</recomendaciones>
+        <precio>15</precio>
+
+   </torneo>
+
+
+
+    </torneos>
+    <!--Zonas de pesca-->
+    <zonas_pesca>
+        <zona_pesca cod_zonpesca="zon01">
+            <nombre>Playa de Las Salinas</nombre>
+            <descripcion>Frecuentada por bañistas</descripcion>
+            <ubicacion>Roquetas de Mar</ubicacion>
+        </zona_pesca>
+
+        <zona_pesca cod_zonpesca="zon02">
+            <nombre>Playa Albufera de Adra</nombre>
+            <descripcion>Zona rocosa</descripcion>
+            <ubicacion>Adra</ubicacion>
+        </zona_pesca>
+
+        <zona_pesca cod_zonpesca="zon03">
+            <nombre>Playa de Alhamilla</nombre>
+            <descripcion>Zona rocosa</descripcion>
+            <ubicacion>Almeria</ubicacion>
+        </zona_pesca>
+    </zonas_pesca>
+
+
+
+</pescaindalo>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+
+
+  <!--Documentacion del xsd Pescaindalo-->
+  <xs:annotation>
+    <xs:documentation xml:lang="es-es">
+      <titulo>Pescaindalo</titulo>
+      <modulo>Lenguajes de marcas</modulo>
+      <fecha_creacion>2024-05-21</fecha_creacion>
+      <autor>Diego Blanque Saavedra</autor>
+    </xs:documentation>
+  </xs:annotation>
+
+  <!--DEFINICIÓN DEL ELEMENTO PESCAINDALO-->
+  <xs:element name="pescaindalo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="modalidades"/>
+        <xs:element ref="cebos"/>
+        <xs:element ref="equipamientos"/>
+        <xs:element ref="torneos"/>
+        <xs:element ref="zonas_pesca"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO MODALIDADES-->
+  <xs:element name="modalidades">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="modalidad" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO MODALIDAD-->
+  <xs:element name="modalidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nom_Modalidad"/>
+        <xs:element ref="descripcion_mod"/>
+      </xs:sequence>
+      <xs:attribute name="cod_mod" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO NOM_MODALIDAD-->
+  <xs:element name="nom_Modalidad" type="xs:string"/>
+
+  <!--DEFINICIÓN DEL ELEMENTO DESCRIPCION_MOD-->
+  <xs:element name="descripcion_mod" type="xs:string"/>
+
+  <!--DEFINICIÓN DEL ELEMENTO CEBOS-->
+  <xs:element name="cebos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cebo" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO CEBO-->
+  <xs:element name="cebo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="clase"/>
+        <xs:element ref="nombre"/>
+        <xs:element ref="descripcion"/>
+        <xs:element ref="precio"/>
+      </xs:sequence>
+      <xs:attribute name="cod_cebo" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO CLASE-->
+  <xs:element name="clase">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Cebo Vivo"/>
+        <xs:enumeration value="Cebo Artificial"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO NOMBRE-->
+  <xs:element name="nombre" type="xs:string"/>
+
+  <!--DEFINICIÓN DEL ELEMENTO DESCRIPCION-->
+  <xs:element name="descripcion" type="xs:string"/>
+
+  <!--DEFINICIÓN DEL ELEMENTO PRECIO-->
+  <xs:element name="precio" type="xs:integer"/>
+
+
+  <!--DEFINICIÓN DEL ELEMENTO EQUIPAMIENTOS-->
+  <xs:element name="equipamientos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="equipamiento" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO EQUIPAMIENTO-->
+  <xs:element name="equipamiento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre"/>
+        <xs:element ref="descripcion"/>
+        <xs:element ref="tipo"/>
+        <xs:element ref="precio"/>
+        <xs:element ref="peso" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="cod_equipamiento" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO TIPO-->
+  <xs:element name="tipo">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Caña de pescar"/>
+        <xs:enumeration value="Hilo"/>
+        <xs:enumeration value="Anzuelo"/>
+        <xs:enumeration value="Plomo"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO PESO-->
+  <xs:element name="peso" type="xs:string"/>
+
+  <!--DEFINICIÓN DEL ELEMENTO TORNEOS-->
+  <xs:element name="torneos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="torneo" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO TORNEO-->
+  <xs:element name="torneo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre"/>
+        <xs:element ref="fecha"/>
+        <xs:element ref="zona_torneo"/>
+        <xs:element ref="mixto"/>
+        <xs:element ref="recomendaciones"/>
+        <xs:element ref="precio"/>
+      </xs:sequence>
+      <xs:attribute name="cod_zona" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO FECHA-->
+  <xs:element name="fecha">
+    <xs:simpleType>
+      <xs:restriction base="xs:date">
+        <xs:pattern value="(\d{4})-(06|07|08)-(\d{2})"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO ZONA_TORNEO-->
+  <xs:element name="zona_torneo">
+    <xs:complexType>
+      <xs:attribute name="cod_zona" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO MIXTO-->
+  <xs:element name="mixto">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="SI"/>
+        <xs:enumeration value="NO"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  
+
+  <!--DEFINICIÓN DEL ELEMENTO recomendaciones-->
+  <xs:element name="recomendaciones" type="xs:string"/>
+  <!--DEFINICIÓN DEL ELEMENTO zonas_pesca-->
+  <xs:element name="zonas_pesca">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="zona_pesca" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO zona_pesca-->
+  <xs:element name="zona_pesca">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre"/>
+        <xs:element ref="descripcion"/>
+        <xs:element ref="ubicacion"/>
+      </xs:sequence>
+      <xs:attribute name="cod_zonpesca" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!--DEFINICIÓN DEL ELEMENTO ubicacion-->
+  <xs:element name="ubicacion" type="xs:string"/>
+
+</xs:schema>

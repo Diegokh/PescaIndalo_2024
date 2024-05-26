@@ -1,0 +1,14 @@
+img{
+    width: 600px;
+    height: 300px;
+    display: block;
+    margin:auto
+}
+
+h2{
+    text-align: center;
+    font-family: 'Krub';
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: red;
+}

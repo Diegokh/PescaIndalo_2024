@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+
+<!ELEMENT pescaindalo (modalidades,recomendaciones,torneos,zonas_pesca)+>
+
+<!ELEMENT modalidades (modalidad)+>
+<!ELEMENT modalidad (nom_Modalidad,descripcion_mod)+>
+<!ATTLIST modalidad cod_mod CDATA #IMPLIED>
+
+<!ELEMENT nom_Modalidad (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT descripcion_mod (#PCDATA)>
+<!ELEMENT recomendaciones (cebos,equipamiento)+>
+<!ELEMENT cebos (ceboVivo,cebos_artificiales)+>
+<!ELEMENT ceboVivo (tipoceboviv)+>
+<!ELEMENT tipoceboviv (nombre_cv,descripcion_cv)+>
+<!ATTLIST tipoceboviv id_cebov CDATA #IMPLIED>
+
+<!ELEMENT nombre_cv (#PCDATA)>
+
+<!ELEMENT descripcion_cv (#PCDATA)>
+
+<!ELEMENT cebos_artificiales (tipoceboartif)+>
+<!ELEMENT tipoceboartif (nombre_ca,descripcion_ca)+>
+<!ATTLIST tipoceboartif id_seartif CDATA #IMPLIED>
+
+<!ELEMENT nombre_ca (#PCDATA)>
+
+<!ELEMENT descripcion_ca (#PCDATA)>
+
+<!ELEMENT equipamiento (canadepescar,anzuelos,hilos,plomos)+>
+
+<!ELEMENT canadepescar (tipo_capescar)+>
+<!ELEMENT tipo_capescar (nombre_cap,descripcion_cap)+>
+<!ATTLIST tipo_capescar id_canpescar CDATA #IMPLIED>
+
+<!ELEMENT nombre_cap (#PCDATA)>
+
+<!ELEMENT descripcion_cap (#PCDATA)>
+
+<!ELEMENT anzuelos (tipoanzuelo)*>
+
+<!ELEMENT tipoanzuelo (nombre_anz,descripcion_anz)+>
+<!ATTLIST tipoanzuelo id_anzuelo CDATA #IMPLIED>
+
+<!ELEMENT nombre_anz (#PCDATA)>
+
+<!ELEMENT descripcion_anz (#PCDATA)>
+
+<!ELEMENT hilos (tipo_hilo)+>
+
+<!ELEMENT tipo_hilo (nombre_hl,descripcion_hl)+>
+<!ATTLIST tipo_hilo id_hilo CDATA #IMPLIED>
+
+<!ELEMENT nombre_hl (#PCDATA)>
+
+<!ELEMENT descripcion_hl (#PCDATA)>
+
+<!ELEMENT plomos (modelos)+>
+
+<!ELEMENT modelos (peso,nombre_plo,descripcion_plo)+>
+<!ATTLIST modelos id_modplom CDATA #IMPLIED >
+
+<!ELEMENT peso EMPTY>
+<!ATTLIST peso gr CDATA #IMPLIED>
+
+<!ELEMENT nombre_plo (#PCDATA)>
+
+<!ELEMENT descripcion_plo (#PCDATA)>
+
+<!ELEMENT torneos (almeria)+>
+
+<!ELEMENT almeria (competicion)+>
+
+<!ELEMENT competicion (nombre_competicion,fecha_torneo,zona_torneo)+>
+<!ATTLIST competicion cod_competicion CDATA #IMPLIED>
+
+<!ELEMENT nombre_competicion (#PCDATA)>
+
+<!ELEMENT fecha_torneo (#PCDATA)>
+
+<!ELEMENT zona_torneo EMPTY>
+<!ATTLIST zona_torneo id_zonapesca CDATA #IMPLIED>
+
+<!ELEMENT zonas_pesca (zona)+>
+<!ELEMENT zona (nombre_zona)+>
+<!ATTLIST zona id_zonpesca CDATA #IMPLIED>
+
+<!ELEMENT nombre_zona (#PCDATA)>

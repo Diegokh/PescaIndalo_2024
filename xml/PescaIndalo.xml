@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<pescaindalo>
+    <!--Tipos Modalidades de Pesca y descripción-->
+    <modalidades>
+        <modalidad cod_mod="">
+            <nom_Modalidad></nom_Modalidad>
+            <descripcion_mod></descripcion_mod>
+        </modalidad>
+    </modalidades>
+    <!--Recomendaciones en equipamiento-->
+    <cebos>
+        <cebo cod_cebo="">
+            <clase></clase>
+            <nombre></nombre>
+            <descripcion></descripcion>
+            <precio></precio>
+        </cebo>
+    </cebos>
+    <equipamientos>
+        <equipamiento cod_equipamiento="">
+            <nombre></nombre>
+            <descripcion></descripcion>
+            <tipo></tipo>
+            <precio></precio>
+            <peso></peso>
+        </equipamiento>
+    </equipamientos>
+    <!--Calendario de torneos de pesca en la provincia-->
+    <torneos>
+       <torneo cod_zona="">
+            <nombre></nombre>
+            <fecha></fecha>
+            <zona_torneo cod_zona=""/>
+            <mixto></mixto>
+            <recomendaciones></recomendaciones>
+            <precio></precio>
+
+       </torneo>
+    </torneos>
+    <!--Zonas de pesca-->
+    <zonas_pesca>
+        <zona_pesca cod_zonpesca="">
+            <nombre></nombre>
+            <descripcion></descripcion>
+            <ubicacion></ubicacion>
+        </zona_pesca>
+    </zonas_pesca>
+</pescaindalo>

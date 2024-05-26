@@ -1,0 +1,22 @@
+/*.contenedor{
+    display: flex;
+    justify-content: center;
+}*/
+
+div{
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Playpen Sans';
+    font-size: 2.3rem;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 1.7rem;
+    font-style: italic;
+}

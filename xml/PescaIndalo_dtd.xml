@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pescaindalo SYSTEM "PescaIndalo.dtd">
+
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<pescaindalo>
+    <!--Tipos Modalidades de Pesca y descripción-->
+    <modalidades>
+        <modalidad cod_mod="mod01">
+            <nom_Modalidad>Surfcasting</nom_Modalidad>
+            <descripcion_mod>
+                Es una modalidad de pesca deportiva o de afición, consistente en la pesca
+                 con caña de pescar, que se realiza desde la orilla de la playa o una zona portuaria.
+            </descripcion_mod>
+        </modalidad>
+        <modalidad cod_mod="mod02">
+            <nom_Modalidad>Spinning</nom_Modalidad>
+            <descripcion_mod>
+                Es básicamente una modalidad de pesca que consiste en intentar engañar a los peces 
+                lanzando un señuelo artificial al agua y darle vida moviéndolo de forma parecida a 
+                como lo haría un pececillo u otra criatura de verdad.
+            </descripcion_mod>
+        </modalidad>
+        <modalidad cod_mod="mod03">
+            <nom_Modalidad>Rockfishing</nom_Modalidad>
+            <descripcion_mod>
+                Es una modalidad híbrida, derivada de la pesca a Surfcasting y la pesca a Spinning 
+                ligero. Con la particularidad de ser practicada en fondos rocosos.
+                Consiste en alcanzar a los peces que se refugian en los acantilados, roquedos, espigones o zonas cuyo fondo y alrededores sean rocosos.
+                Puede practicarse a cualquier profundidad siempre y cuando el equipo de carácter ligero, pueda soportarlo.
+            </descripcion_mod>
+        </modalidad>
+    </modalidades>
+   <!--Recomendaciones en equipamiento,cebos... junto una descripcion y su nombre-->
+    <recomendaciones>
+        <!-- Tipos de cebos y señuelos y recomendaciones-->
+        <cebos>
+            <ceboVivo>
+                <tipoceboviv id_cebov="cv01">
+                    <nombre_cv>
+                        Lombriz coreana
+                    </nombre_cv>
+                    <descripcion_cv>
+                        Esta especie es muy apreciada para la pesca gracias a su vitalidad y amplio rango de presas potenciales. Debido a sus resistentes carnes
+                        y tamaño, es válido para diversas técnicas, como el lanzado pesado o el surfcasting. 
+                    </descripcion_cv>
+                </tipoceboviv>
+                <tipoceboviv id_cebov="cv02">
+                    <nombre_cv>
+                        Lombriz americana
+                    </nombre_cv>
+                    <descripcion_cv>
+                        Puede utilizarse entero para pescar espáridos, lubinas o lobinas al surfcasting o con flotador. 
+                    </descripcion_cv>
+                </tipoceboviv>
+                <tipoceboviv id_cebov="cv03">
+                    <nombre_cv>
+                        Tita mediana
+                    </nombre_cv>
+                    <descripcion_cv>
+                        Cebo natural para pesca en agua salada adecuado para la pesca de dorada, herrera, sargo, lubina y otros peces.
+                    </descripcion_cv>
+                </tipoceboviv>
+            </ceboVivo>
+            <cebos_artificiales>
+                <tipoceboartif id_seartif="sa01">
+                    <nombre_ca>
+                        Vinilo 13 cm
+                    </nombre_ca>
+                    <descripcion_ca>
+                        Este señuelo ha sido diseñado para la pesca de depredadores en puestos con obstáculos.
+                    </descripcion_ca>
+                </tipoceboartif>
+                <tipoceboartif id_seartif="sa02">
+                    <nombre_ca>
+                        SEÑUELO COMBO BLACK MINNOW
+                    </nombre_ca>
+                    <descripcion_ca>
+                        Cabeza plomada de 10 gramos con cuerpo de vinilo y anzuelo articulado para la pesca de depredadores en agua dulce y salada.
+                    </descripcion_ca>
+                </tipoceboartif>
+            </cebos_artificiales>
+        </cebos>
+        <equipamiento>
+            <!-- Tipos de cañas y recomendaciones-->
+            <canadepescar>
+                <tipo_capescar  id_canpescar="cp01">
+                    <nombre_cap>
+                        Daiwa SWEEPFIRE 42H
+                    </nombre_cap>
+                    <descripcion_cap>
+                        Esta es una caña excelente para principiantes,ofrece buenas prestaciones y su precio es de 75 euros
+                    </descripcion_cap>
+                </tipo_capescar>
+                <tipo_capescar  id_canpescar="cp02">
+                    <nombre_cap>
+                        Kali-Kunnan Nemesis
+                    </nombre_cap>
+                    <descripcion_cap>
+                        Es una excelente opción dentro de las cañas económicas,fabricadas en carbono y con 4,20 de longitud
+                    </descripcion_cap>
+                </tipo_capescar >
+                <tipo_capescar  id_canpescar="cp02">
+                    <nombre_cap>
+                        ORUS SURF YUKI
+                    </nombre_cap>
+                    <descripcion_cap>
+                        Esta caña esta pensada para jornadas largas de pesca
+                    </descripcion_cap>
+                </tipo_capescar>
+            </canadepescar>
+            <!-- Tipos de anzuelos junto descripción-->
+            <anzuelos>
+                <tipoanzuelo  id_anzuelo="an01">
+                    <nombre_anz>
+                        AZUELO ASARI BLACK TUNA
+                    </nombre_anz>
+                    <descripcion_anz>
+                        El anzuelo Asari Black Tuna está recomendado para la pesca de grandes especies y en especial para jigging.
+                    </descripcion_anz>
+                </tipoanzuelo>
+                <tipoanzuelo  id_anzuelo="an02">
+                    <nombre_anz>
+                        ANZUELOS HAYABUSA 121
+                    </nombre_anz>
+                    <descripcion_anz>
+                        Amzuelos japoneses de alta calidad, tamaño Nº1
+                    </descripcion_anz>
+                </tipoanzuelo>
+                <tipoanzuelo  id_anzuelo="an03">
+                    <nombre_anz>
+                        ANZUELO SIMPLE PESCA DEL SILURO CF
+                    </nombre_anz>
+                    <descripcion_anz>
+                        Anzuelo simple con ojo polivalentes para todos los montajes.Muy sólido, para la pesca de siluros grandes.
+                    </descripcion_anz>
+                </tipoanzuelo>
+            </anzuelos>
+            <!-- Tipos de hilos y modelos recomendados -->
+            <hilos>
+                <tipo_hilo id_hilo="hil01">
+                    <nombre_hl>YUKI INVISIBLE 3G</nombre_hl>
+                    <descripcion_hl>
+                        Buen hilo para principiante con una buena relacion calidad/precio
+                    </descripcion_hl>
+                </tipo_hilo>
+                <tipo_hilo id_hilo="hil02">
+                    <nombre_hl>GORILLA UC4</nombre_hl>
+                    <descripcion_hl>
+                        Se utiliza para hacer líneas madre, bobinar carretes o para empatillar anzuelos. 
+                        Destaca por su alto rendimiento en días claros y con diámetros moderados.
+                    </descripcion_hl>
+                </tipo_hilo>
+                <tipo_hilo id_hilo="hil03">
+                    <nombre_hl>SEAGUAR FINAL LINE</nombre_hl>
+                    <descripcion_hl>
+                        La línea Seaguar Final Line es un flourocarbono único en el mercado debido a su marcada elasticidad.
+                        Es muy resistente y mantiene invariable la resistencia a la rotura, incluso tras largo tiempo en el agua.
+                    </descripcion_hl>
+                </tipo_hilo>
+            </hilos>
+            <!-- Tipos de plomos y modelos recomendados-->
+            <plomos>
+                <modelos  id_modplom="pl01">
+                        <peso gr="120"></peso>
+                        <nombre_plo>PLOMO FONDO PORTUGUES</nombre_plo>
+                        <descripcion_plo>
+                            Plomada polivalente para pescar en diferentes 
+                            modalidades de pesca deportiva como surfcasting</descripcion_plo>
+                </modelos>
+                <modelos  id_modplom="pl02">
+                        <peso gr="100"></peso>
+                        <nombre_plo>PLOMO TUBO ALAS</nombre_plo>
+                        <descripcion_plo>
+                            Plomo de  con tubo corredizo especial para la pesca en piedras o 
+                            llanuras de alguero, por sus alas despega fácilmente del fondo.
+                        </descripcion_plo>
+                </modelos>
+            </plomos>
+        </equipamiento>
+    </recomendaciones>
+    <!--Calendario de torneos de pesca en la provincia-->
+    <torneos>
+        <almeria>
+            <competicion cod_competicion="comp01">
+                <nombre_competicion >Copa Piston</nombre_competicion>
+                <fecha_torneo>1-03-2024</fecha_torneo>
+                <zona_torneo id_zonapesca="01"/>
+            </competicion>
+            <competicion cod_competicion="comp02">
+                <nombre_competicion>Copa Almeria</nombre_competicion>
+                <fecha_torneo>25-07-2024</fecha_torneo>
+                <zona_torneo id_zonapesca="02"/>
+            </competicion>
+            <competicion cod_competicion="comp03">
+                <nombre_competicion>Copa Arrecife</nombre_competicion>
+                <fecha_torneo>20-04-2024</fecha_torneo>
+                <zona_torneo id_zonapesca="03"/>
+
+            </competicion>
+        </almeria>
+    </torneos>
+    <!--Mapa con zonas de pesca y la prevision meteorologica-->
+    <zonas_pesca>
+        <zona id_zonpesca="zon01">
+            <nombre_zona>Playa de Las Salinas</nombre_zona>
+        </zona>
+        <zona id_zonpesca="zon02">
+            <nombre_zona>Playa Albufera de Adra</nombre_zona>
+        </zona>
+        <zona id_zonpesca="zon03">
+            <nombre_zona>Playa de Alhamilla</nombre_zona>
+        </zona>
+    </zonas_pesca>
+</pescaindalo>
