@@ -1,0 +1,43 @@
+.recomendaciones {
+    padding-right: 25rem;
+    padding-left: 25rem;
+}
+
+.recomendaciones__titulo {
+    display: flex;
+    justify-content: center;
+
+    padding-right: 25rem;
+    padding-left: 25rem;
+}
+
+.recomendaciones__subtitulo {
+    display: flex;
+    justify-content: center;
+
+    padding-right: 25rem;
+    padding-left: 25rem;
+}
+
+.recomendaciones__card {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    list-style-type: none;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.cebos {
+    padding-right: 25rem;
+    padding-left: 25rem;
+}
+
+.cebos__img {
+    width: 300px;
+}
