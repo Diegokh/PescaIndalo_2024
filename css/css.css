@@ -1,264 +1,28 @@
-:root {
-    --blanco: #ffffff;
-    --oscuro: #212121;
-    --primario: #FFC107;
-    --secundario: #0097a7;
-    --gris: #757575;
-    --grisclaro: #DFE9F3;
-    --azul: #007bff;
-    --azulclaro: #00CCFF;
-    --azulmed:	#4169E1;
-    --verde:#89AC76;
-    --marron:#C58A3E;
-    --light:#f8f9fa;
-    --prueba:#D5D5D5;
-    --paletton1:#6DCDD6;
-    --paletton2:#42B7C2;
-    --paletton3:#22A7B3;
-    --paletton4:#029AA8;
-    --paletton5:#016F79;
+body {
+    padding-right: 25rem;
+    padding-left: 25rem;
 }
 
-
-/*Fonts*/
-
-
-  @font-face {
-    font-family: 'Krub';
-    src: url(/fonts/Krub/Krub-Bold.ttf);
-    font-weight: bold;
-  }
-
-  @font-face {
-    font-family: 'Noto Sans';
-    src: url(/fonts/Noto_Sans/NotoSans-Regular.ttf);
-    font-weight: normal;
-  }
-  @font-face {
-    font-family: 'Noto Sans';
-    src: url(/fonts/Noto_Sans/NotoSans-Bold.ttf);
-    font-weight: bold; 
-  }
-
-  @font-face {
-    font-family: 'Noto Sans';
-    src: url(/fonts/Noto_Sans/NotoSans-MediumItalic.ttf);
-    font-weight: 500; 
-  }
-
-  @font-face {
-    font-family: 'Playpen Sans';
-    src: url(/fonts/Playpen_Sans/static/PlaypenSans-Medium.ttf);
-    font-weight: normal;
-  }
-
-  html{
-    background-color: var(--azulclaro)
-}
-
-/*Media query*/
-/*
-@media(max-width:768px){
-    body{
-        background-color: red;
-    }
-
-}
-*/
-
-/*Fondo encabezado
-.imgbck{
-    background-image: url(/imgn/imgan.jpeg);
-  margin: auto 0;
-  height: 200px;
-  width: 1947px;
-  background-repeat: no-repeat;
- 
-}
-*/
- 
-
-body{
-    margin: 0 auto;
-
-    /*background-color: var(--azulclaro);*/
-}
-
-
-
-
-
-.Encabezado{
-    text-align: center;
-   /* background-color: var(--azulclaro);*/
-    color: var(--oscuro);
-    font-family: 'Krub';
-    font-weight: bold;
-    font-size: 1.6rem;
-}
-
-
-
-
-
-.contenedor{
-    width: 112rem;
-    margin: 0 auto;
-}
-
-/*Barra de navegación*/
-.nav-b{
-    background-color: var(--verde);
-}
-
-.nav-prin{
-    display: flex-end;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-.nav-prin a{
-    font-weight: bold;
-    font-family: 'Noto Sans';
-    font-size: 2rem;
-    text-decoration: none;
-    padding: 1rem;
-    text-align: center;
-    color: var(--oscuro);
+.navbar {
+    display: flex;
+    flex-direction: row;
     
-
+    justify-content: center;
+    align-items: center;
 }
 
-.nav-prin a:hover{
-   background-color: var(--primario);
-    color: var(--oscuro);
+.navbar__title {
+    padding-right: 2rem;
 }
 
+.navbar__web-logo {
+    width: 32px;
+    height: 32px;
 
-
-
-/*Seccion de bienvenida*/
-.hbienvenida{
-    color: var(--oscuro);
-    text-align: center;
-    font-family: 'Playpen Sans';
-    font-weight: 500;
-    font-size: 1.8rem;
+    padding-right: 1rem;
 }
 
-/*Borde bienvenida*/
-
-
-/*secciones*/
-.midprin{
-    text-align: center;
-}
-
-.textbvn{
-    text-align: center;
-    /*background-color: var(--oscuro);*/
-    font-family: 'Noto Sans';
-    font-weight: normal;
-    color: var(--oscuro);
-    margin-bottom: 1.5rem;
-}
-
-/*Caja bienvenida*/
-.cajatext{
-    border-radius: 10px 10px 10px 10px;
--moz-border-radius: 10px 10px 10px 10px;
--webkit-border-radius: 10px 10px 10px 10px;
-border: 4px solid #000000;
-background-color: var(--verde);
-}
-
-.caja{
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 4px solid #000000;
-    background-color: var(--verde);
-   
-}
-/*Titulo secciones*/
-.titprin{
-    font-family: 'Playpen Sans';
-    color: var(--oscuro);
-    font-size: 2.7rem;
-}
-/*Estilos secciones recomendadas*/
-/*Seccion 1*/
-.sec1{
-    color: var(--oscuro);
-    font-family: 'Noto Sans';
-    font-weight: bold;
-    font-size: 2rem;
-    
-}
-/*Texto de la seccion*/
-.tsec1{
-    font-size: 1rem;
-    font-family: 'Noto Sans';
-    font-weight: 500;
-}
-
-/*Seccion 2*/
-.sec2{
-    color: var(--oscuro);
-    font-family: 'Noto Sans';
-    font-weight: bold;
-    font-size: 2rem;
-    
-}
-/*texto de la seccion*/
-.tsec2{
-    font-size: 1rem;
-    font-family: 'Noto Sans';
-    font-weight: 500;
-}
-/*Seccion 3*/
-.sec3{
-    color: var(--oscuro);
-    font-family: 'Noto Sans';
-    font-weight: bold;
-    font-size: 2rem;
-    
-}
-/*Texto de la seccion*/
-.tsec3{
-    font-size: 1rem;
-    font-family: 'Noto Sans';
-    font-weight: 500;
-}
-
-/*Tipografia de los enlaces en la seccion recomendaciones*/
-.midprin a{
-    text-align: center;
-    color: var(--oscuro);
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 1rem;
-}
-
-.midprin a:hover{
-   /* background-color: var(--primario);*/
-    color: var(--blanco);
-}
-/*Fotopesca*/
-
-.pescamain{
-    height: 300px;
-    width: 800px;
-    margin: auto;
-    display: block;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-/*Pie de pagina*/
-.paginap{
-    text-align: center;
-    color: var(--oscuro);
-    margin-top: 0.5rem;
-    font-family: 'Krub';
+.navbar__element {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
 }
